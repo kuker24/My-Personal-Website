@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="Fahmi Harun favicon F">
+  <defs>
+    <linearGradient id="bg" x1="10" y1="8" x2="56" y2="58" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7eb0ff">
+        <animate attributeName="stop-color" values="#7eb0ff;#2563eb;#60a5fa;#7eb0ff" dur="5.5s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="0.52" stop-color="#2563eb">
+        <animate attributeName="stop-color" values="#2563eb;#1d4ed8;#3b82f6;#2563eb" dur="5.5s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="1" stop-color="#0f172a">
+        <animate attributeName="stop-color" values="#0f172a;#172554;#1e3a8a;#0f172a" dur="5.5s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+    <linearGradient id="ring" x1="8" y1="8" x2="56" y2="56" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ffffff" stop-opacity="0.95" />
+      <stop offset="0.48" stop-color="#bfdbfe" stop-opacity="0.55" />
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#fff" stop-opacity="0" />
+      <stop offset="0.5" stop-color="#fff" stop-opacity="0.5" />
+      <stop offset="1" stop-color="#fff" stop-opacity="0" />
+    </linearGradient>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#0f172a" flood-opacity="0.28" />
+    </filter>
+    <clipPath id="clip">
+      <rect x="4" y="4" width="56" height="56" rx="16" />
+    </clipPath>
+    <style>
+      #halo { transform-origin: 32px 32px; }
+      #letter { transform-origin: 32px 34px; }
+      #scan { transform-origin: 32px 32px; }
+      @keyframes spin { to { transform: rotate(360deg); } }
+      @keyframes dash { 0% { stroke-dashoffset: 0; } 100% { stroke-dashoffset: -182; } }
+      @keyframes floatF { 0%,100% { transform: translateY(0) scale(1); } 50% { transform: translateY(-1.4px) scale(1.025); } }
+      @keyframes sweep { 0% { transform: translateX(-46px) rotate(18deg); opacity: 0; } 18% { opacity: .72; } 48% { opacity: .18; } 100% { transform: translateX(72px) rotate(18deg); opacity: 0; } }
+      @keyframes spark { 0%, 55%, 100% { opacity: .18; transform: scale(.82); } 20% { opacity: 1; transform: scale(1.2); } }
+      @keyframes breathe { 0%,100% { opacity: .42; } 50% { opacity: .78; } }
+      @media (prefers-reduced-motion: no-preference) {
+        #halo { animation: spin 6s linear infinite, dash 3s linear infinite; }
+        #letter { animation: floatF 3.2s ease-in-out infinite; }
+        #scan { animation: sweep 3.4s cubic-bezier(.22,.61,.36,1) infinite; }
+        #spark-a { animation: spark 2.4s ease-in-out infinite; }
+        #spark-b { animation: spark 2.4s ease-in-out .55s infinite; }
+        #glow { animation: breathe 2.8s ease-in-out infinite; }
+      }
+    </style>
+  </defs>
+
+  <rect id="glow" x="2" y="2" width="60" height="60" rx="18" fill="#2563eb" opacity="0.42" />
+  <g clip-path="url(#clip)" filter="url(#softShadow)">
+    <rect x="4" y="4" width="56" height="56" rx="16" fill="url(#bg)" />
+    <path d="M8 18 C18 7 43 2 57 18 L57 4 L8 4 Z" fill="#fff" opacity="0.16" />
+    <rect id="scan" x="-22" y="-7" width="14" height="80" fill="url(#shine)" opacity="0" />
+    <path id="letter" d="M20 15.5H47.5V24H29.7V31.2H44V39.2H29.7V50H20V15.5Z" fill="#fff" />
+    <path d="M30 24H47.5V27.2H30ZM30 39.2H38.8V42.4H30Z" fill="#dbeafe" opacity="0.72" />
+    <circle id="spark-a" cx="48.5" cy="15.5" r="2" fill="#fff" opacity="0.75" />
+    <circle id="spark-b" cx="14.8" cy="49.2" r="1.45" fill="#bfdbfe" opacity="0.55" />
+  </g>
+  <rect x="5.5" y="5.5" width="53" height="53" rx="15" fill="none" stroke="#fff" stroke-opacity="0.18" />
+  <rect id="halo" x="7" y="7" width="50" height="50" rx="14" fill="none" stroke="url(#ring)" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="48 134" />
+</svg>

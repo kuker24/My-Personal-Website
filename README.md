@@ -16,6 +16,7 @@ Website ini dirancang sebagai portfolio/CV online untuk menampilkan:
 
 ## Highlight Konten
 
+- **Animated favicon** — logo huruf **F** berbasis SVG dengan animasi gradient, halo, shine sweep, dan micro-motion profesional.
 - **About** — ringkasan profil dan foto Fahmi Harun.
 - **Experience** — pengalaman sebagai Lead Software Developer dan Independent Systems & AI Engineer.
 - **Skills** — software development, backend infrastructure, DevOps/SysAdmin, networking/IoT, dan AI automation.
@@ -41,6 +42,7 @@ Website ini dirancang sebagai portfolio/CV online untuk menampilkan:
 ├── Personal Website.html
 ├── Fahmi_Harun_CV_Astra_Bahasa_Indonesia.pdf
 ├── assets/fahmi-harun-profile.jpeg
+├── assets/favicon.svg
 └── README.md
 ```
 
